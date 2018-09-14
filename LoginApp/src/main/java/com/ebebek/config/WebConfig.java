@@ -18,11 +18,11 @@ public class WebConfig implements WebMvcConfigurer {
 		registry.jsp().prefix("/WEB-INF/views/").suffix(".jsp");
 	}
 
-	@Override
-	public void addViewControllers(ViewControllerRegistry registry) {
-		// registry.addViewController("/login").setViewName("login");
-		registry.addViewController("/register").setViewName("register");
-	}
+	
+	
+
+		
+	
 
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
