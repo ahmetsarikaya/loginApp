@@ -23,7 +23,6 @@ public class UserDetailServiceImpl implements UserDetailsService {
 		UserBuilder builder = null;
 		if (user != null) {
 			builder = org.springframework.security.core.userdetails.User.withUsername(username);
-			// builder.disabled(!user.isEnabled());
 			builder.password(new BCryptPasswordEncoder().encode(user.getPassword()));
 			String[] authorities = user.getRoles() != null ? user.getRoles().split(",") : null;
 
